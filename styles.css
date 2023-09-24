@@ -1,0 +1,300 @@
+body {
+    height: 100dvh;  
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* index.html, image.html and advanced.html */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    height: 100%;
+
+}
+
+/* index.html image.html advanced.html  links which relate the three pages*/
+/* .top , .top > a , .top >a:hover */
+.top  {
+    
+    margin: 25px 40px 0px 0px;
+    align-self: flex-end;
+
+}
+
+.top > a {
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+}
+
+.top > a:hover {
+    text-decoration: underline;
+}
+
+/* index.html and image.html */
+.image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    min-height: 100px;
+    max-height: 300px;
+    height: calc(100% - 543px); 
+}
+
+/* image.html image part */
+.image-relative {
+    position: relative;
+}
+
+/* image.html googleimage picture */
+.text {
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    color: rgb(67, 138, 245);
+    position: absolute;
+    bottom: 6px;
+    right: 3px;
+}
+
+/* index.html and image.html search part (parent tag) */
+.middle  {   
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* index.html and image.html  about the form */
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: inherit;
+}
+
+/* index.html and image.html form tag */
+.formsearch {
+    width: 95%;
+    max-width: 614px;
+    min-width: 400px;
+
+    position: relative;  
+}
+
+/* image.html button for search */
+#search_icon {
+    position: absolute;
+    top: 23px;
+    right: 30px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABRklEQVR4nO2UwUoDQQyG965403rpzCq+RrWPob6EIIh4Umir1oyg4FtIxSfR+gyajAUvWs/dkpkNymKZGaUoxUBgWLL5/vk32SybydBng2Vl6FgB9bXBd04+K6DOysVz7WfNDW75plR8mYBDDU+b31SO2xpw5Jvhdb2LjRrYOc4caF0Z7JWQUTKEbXHqDBV1gzuTb0i7cpMku9hzUR5Re8O1CrCdAnhw6rvYCNXm57ThAdSPBog97HeodvFqMC82JQP45VDt2uXLQmnRa7JFPC1hMbbpAIbu4wFAHf8S9iLE3JYD0YoG8MiJTTyKk4XYvVLI2yrYpSwleHlk0dwogm3KovH5Qzl/4MeDpOYViNykqCYrz4FOPj07TYawXbxECujO/3tw6M4GW2JLBZwOCYUC3P+H/F27lKHDbBqhAY84p9L812IMAc5HraClIrUAAAAASUVORK5CYII=");
+    border-radius: 10px; 
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    outline: none;
+} 
+
+/* index.html and image.html */
+input[type=text].input-area {
+    border: 1px solid rgb(228, 222, 222);
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 25px;
+    
+    margin: 10px 50px 20px 17px;
+    padding: 9px 5px 9px 45px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    outline: none;
+
+    width: inherit;
+    height: 50px;
+}
+
+input[type=text].input-area:hover  {
+    box-shadow: 1px 1.5px 5px 1px rgb(202, 202, 202);
+    border: none;
+}
+
+/* index.html which contains Google Search and I'm Feeling Lucky */
+.click {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.click > input {
+    margin: 5px;
+    padding: 10px 15px;
+    border: 0.5px solid transparent;
+    border-radius: 5px;
+
+    background-color: rgb(249, 247, 248);
+    color: rgb(49, 49, 49);
+    
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.click > input:hover {
+    border-color: rgb(215, 216, 216);
+    box-shadow: 0px 1px 2px  rgb(196, 197, 197);
+}
+
+.click > input:focus  {
+    border-color: #4d90fe;
+}
+
+/* advanced.html */
+.top-advanced {
+    margin: 50px 0px 30px 45px;
+    align-content: center;
+}
+.advanced-heading {
+    font-weight: 200;
+    font: 20px Arial, Helvetica, sans-serif;
+    color: rgb(233, 60, 60);
+}
+
+.line {
+    border-bottom: 1px solid  rgb(180, 180, 180);
+}
+
+.advanced-form {
+    width: 96%;
+    margin: 40px 2% 0 30px;
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.field > * {
+    height: 28px;    
+} 
+
+.field > .space {
+    max-width: 600px;
+    width: 50%;
+}
+
+.field > .label {
+    max-width: 190px;
+    min-width: 170px;
+    width: 17%;
+    padding-top: 10px;
+
+}
+
+.field > .textinput{
+    max-width: 600px;
+    min-width: 240px;
+    width: 50%;
+    
+    padding: 5px;
+    border: 1px solid rgb(168, 168, 168);
+    border-top: 1.5px solid rgb(168, 168, 168);
+    outline: none;
+}
+
+.field > .textinput:focus {
+    border-color:  rgb(34, 34, 255);
+    box-shadow: 0.7px 0.7px 1px 1px rgb(177, 177, 177) inset;
+}
+
+.field > .span {
+    padding-left: 10px;
+    width: 35%;
+    padding-top: 5px;
+}
+.field > .span , .field > .label {
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    line-height: 1;
+    font-weight: 200;
+    color: rgb(60, 60, 60);
+}
+
+@media (max-width: 1144px) {
+    .field > .span {
+        display: none;
+    }
+}
+
+.field > .noinput {
+    max-width: 600px;
+    min-width: 240px;
+
+    width: 50%;
+    height: 32px;
+    outline: none;
+    position: relative;
+
+}
+
+ .advanced-search {
+    height: inherit;
+    position: absolute;
+    height: 100%;
+    right: 2px;
+
+    padding: 7px;
+    margin: 15px 0px;
+
+    color: white;
+    background-color: #4d90fe;
+    
+    border: 1px solid slategrey;
+    border-radius: 2px;
+
+} 
+
+.googleimage {
+    position: relative;
+}
+
+.googleimage-top  > img {
+    position: absolute;
+    width: 70px;
+    top: 20px;
+    left: 20px;
+}
+
+
+.field > .format-text {
+    padding-top: 5px;
+    margin-bottom: 10px;
+   font-size: 14px; 
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 500;
+   font-weight: bolder;
+   color: rgb(106, 106, 106);
+}
+
+.font {
+    font-family: monospace  ;
+    font-weight: 100;
+    font-size: 12px ;
+}
